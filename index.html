@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <form id="registration-form" onsubmit="handleSubmit(event)">
+        <h1 >----------Student Registration Form----------</h1>
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form">
+            <label for="gender">gender:</label>
+            <div class="gender">
+                <input type="radio" id="gender" name="gender" required>male 
+                <input type="radio" id="gender" name="gender" required>female
+            </div>
+        </div>
+        <div class="form">
+            <label for="address">Address:</label>
+            <input type="address" id="address" name="address"required>
+        </div>
+        <div class="form">
+            <label for="dateOBirth">DOB:</label>
+            <input type="date" id="dateOBirth" name="dateOBirth"required>
+        </div>
+        <div class="form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"required>
+        </div>
+  
+        
+        <div class="form">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div> 
+        <input type="submit" value="Submit">
+    </form>
+    <div id="output">
+        <h1 class="output1">Register Details:</h1>
+        <p>Name: <span id="output-name"></span></p>
+        <p>Address: <span id="output-address"></span></p>
+        <p>DOB: <span id="output-dateOBirth"></span></p>
+        <p>Eamil: <span id="output-email"></span></p>
+        <p>Password: <span id="output-password"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
